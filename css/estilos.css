@@ -154,7 +154,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(7, 1fr);
-  grid-template-areas: "navegacion navegacion" "imagenesTienda1 imagenesTienda2" "imagenesTienda3 imagenesTienda3" "imagenesTienda5 imagenesTienda6" "imagenesTienda7 imagenesTienda8" "imagenesTienda9 imagenesTienda10" "imagenesTienda11 imagenesTienda12";
+  grid-template-areas: "navegacion navegacion" "imagenesTienda1 imagenesTienda2" "imagenesTienda3 imagenesTienda4" "imagenesTienda5 imagenesTienda6" "imagenesTienda7 imagenesTienda8" "imagenesTienda9 imagenesTienda10" "imagenesTienda11 imagenesTienda12";
   grid-gap: 10px;
   padding: 10px; }
 
