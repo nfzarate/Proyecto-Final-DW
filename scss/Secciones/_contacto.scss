@@ -1,0 +1,52 @@
+.formularioContacto {
+    width: ($ancho)-50;
+    height: 450px;
+    margin: auto;
+    background-color: $colorbase;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 100px;
+
+
+    h2 {
+    color: $blanco;
+    text-align: center;
+    margin:$defaultmargin;
+    font-size: 25px;
+    margin-bottom: ($defaultmargin)+10;
+    }    
+
+    input,textarea {
+    width: $fullancho;
+    margin-bottom: 25px;
+    padding: ($defaultpadding)-3;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: none;
+    }
+    textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: $fullancho;
+    }
+}
+
+#boton { 
+    background-color:lightgray;
+    color: $colorbase;
+    padding: $defaultpadding+5;
+    font-size: 18px;
+    font-weight: bolder;
+
+    &:hover {
+    cursor: pointer;
+    }
+}
+
+@media (max-width:480px) {
+    .formularioContacto{
+        width: $fullancho
+    }
+}

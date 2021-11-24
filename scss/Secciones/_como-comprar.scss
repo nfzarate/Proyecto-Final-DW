@@ -1,0 +1,27 @@
+.contenedorsecciones {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $defaultpadding;
+    text-align: justify;
+
+
+
+    h1,h2 {
+    color: $colorbase;
+    margin: $defaultmargin 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+    }
+
+
+    p {
+    line-height: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: $defaultpadding;
+
+    }
+}

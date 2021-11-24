@@ -1,0 +1,235 @@
+/*--Hero--*/
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)) , url(/Images/imagenHero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.contenedor__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356));
+    border-radius: 7px;
+    padding: 5px 5px;
+}
+
+.contenedor__box h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: $blanco;
+    font-size: 25px;
+}
+
+.contenedor__box span {
+    color: $blanco;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: $colorbase;
+}
+
+.contenedor__box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: $defaultmargin;
+}
+
+.contenedor__box .boton {
+    border-radius: 10px;
+    text-decoration: none;    
+    padding: 5px 10px;
+    text-align: center;
+    color: #000000;
+    background-color: $blanco;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    transition: all 0.4s linear;
+    margin-bottom: 5px;
+}
+
+.contenedor__box .boton:hover {
+    background-color:rgb(184, 180, 180);
+    color: $blanco;
+}
+
+/*IMAGENES CATEGORIAS*/
+
+#contenedorCategorias { 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: $defaultmargin;
+}
+
+
+#contenedorCategorias .cajabebes,
+#contenedorCategorias .cajaninios,
+#contenedorCategorias .cajaninias {
+    width: ($ancho)-130;
+    height: 350px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    transition: all 0.9s;
+}
+
+#contenedorCategorias .cajabebes:hover,
+#contenedorCategorias .cajaninios:hover,
+#contenedorCategorias .cajaninias:hover {
+    transform: scale(1.15);
+}
+
+.cajabebes a, .cajaninios a, .cajaninias a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+}
+.cajabebes__btnB,.cajaninios__btnOs,.cajaninias__btnAs {
+    margin-bottom: 35px;
+    padding: 5px 8px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $blanco;
+    border-radius: 7px;
+    transition: all 0.4s linear    
+}
+
+.cajabebes__btnB:hover,.cajaninios__btnOs:hover,.cajaniniasbtnAs:hover {
+    background-color: rgb(184, 180, 180);
+}
+
+.cajaninias a:hover, .cajaninios a:hover,.cajabebes a:hover  {
+    color: $blanco;
+}
+
+#contenedorCategorias .cajabebes {
+    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url(/Images/bebe.jpg)
+}
+
+#contenedorCategorias .cajaninios {
+    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url(/Images/ninios.jpg); 
+}
+
+#contenedorCategorias .cajaninias {
+    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url(/Images/ninias.jpg);
+}
+
+/*--Sección de Tienda--*/
+
+.ulCategorias {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.ulCategorias li {
+    padding: 5px;
+    background-color:rgb(221, 219, 219);
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas:
+        "navegacion navegacion"
+        "imagenesTienda1 imagenesTienda2"
+        "imagenesTienda3 imagenesTienda3"
+        "imagenesTienda5 imagenesTienda6"
+        "imagenesTienda7 imagenesTienda8"
+        "imagenesTienda9 imagenesTienda10"
+        "imagenesTienda11 imagenesTienda12";    
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.navegacion {
+    grid-area: navegacion;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenTienda1 {
+    grid-area: imagenTienda1;
+}
+.imagenTienda2 {
+    grid-area: imagenTienda2;
+}
+.imagenTienda3 {
+    grid-area: imagenTienda3;
+}
+.imagenTienda4 {
+    grid-area: imagenTienda4;
+}
+.imagenTienda5 {
+    grid-area: imagenTienda5;
+}
+.imagenTienda6 {
+    grid-area: imagenTienda6;
+}
+.imagenTienda7 {
+    grid-area: imagenTienda7;
+}
+.imagenTienda8 {
+    grid-area: imagenTienda8;
+}
+.imagenTienda9 {
+    grid-area: imagenTienda9;
+}
+.imagenTienda10 {
+    grid-area: imagenTienda10;
+}
+.imagenTienda11 {
+    grid-area: imagenTienda11;
+}
+.imagenTienda12 {
+    grid-area: imagenTienda12;
+}
+
+
+#grilla img {
+width: $fullancho;
+object-fit: cover;
+border-radius: 5px;
+}
+
+#grilla div {
+    text-align: center;
+}
+
+#grilla a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: $colorbase;
+}
+
+#grilla a:hover {
+
+    text-decoration: underline;
+}

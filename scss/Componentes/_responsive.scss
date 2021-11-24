@@ -1,0 +1,197 @@
+/* Responsive */
+/*Dispositivos medianos*/
+@media (min-width: 768px) {
+
+    #contenedorCategorias { 
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #contenedorCategorias .cajaBebes,
+    #contenedorCategorias .cajaNinios,
+    #contenedorCategorias .cajaNinias {
+        margin-right: 10px;
+    }
+
+    .ulCategorias li { 
+        margin: 5px;
+    }
+
+    #grilla {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 30px repeat(3,1fr);
+        grid-template-areas:
+            "navegacion navegacion navegacion navegacion"
+            "imagenesTienda1 imagenesTienda2 imagenesTienda3 imagenesTienda4"
+            "imagenesTienda5 imagenesTienda6 imagenesTienda7 imagenesTienda8"
+            "imagenesTienda9 imagenesTienda10 imagenesTienda11 imagenesTienda12";  
+        grid-gap: 25px;
+        padding: 10px;
+    }
+
+    .navegacion {
+        grid-area: navegacion;
+    }
+
+    .imagenTienda1 {
+        grid-area: imagenTienda1;
+    }
+    .imagenTienda2 {
+        grid-area: imagenTienda2;
+    }
+    .imagenTienda3 {
+        grid-area: imagenTienda3;
+    }
+    .imagenTienda4 {
+        grid-area: imagenTienda4;
+    }
+    .imagenTienda5 {
+        grid-area: imagenTienda5;
+    }
+    .imagenTienda6 {
+        grid-area: imagenTienda6;
+    }
+    .imagenTienda7 {
+        grid-area: imagenTienda7;
+    }
+    .imagenTienda8 {
+        grid-area: imagenTienda8;
+    }
+    .imagenTienda9 {
+        grid-area: imagenTienda9;
+    }
+    .imagenTienda10 {
+        grid-area: imagenTienda10;
+    }
+    .imagenTienda11 {
+        grid-area: imagenTienda11;
+    }
+    .imagenTienda12 {
+        grid-area: imagenTienda12;
+    }   
+
+
+    .footer { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/*Dispositivos Grandes*/
+
+@media (min-width: 1024px) {
+    .navbar-collapse {
+        flex-grow: 0.5;
+    }
+
+    
+    .contenedor__box h1 { 
+        font-size: 40px;
+    }
+
+    .contenedor__box span {
+        font-size: 25px;
+    }
+
+    .contenedor__box .boton {
+        font-size: 20px;
+    }
+
+    #contenedorCategorias { 
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #contenedorCategorias .cajaBebes,
+    #contenedorCategorias .cajaNinios,
+    #contenedorCategorias .cajaNinias {
+        margin-right: 0px;
+    }
+
+    #grilla {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 10px;
+        padding: 10px;
+        grid-template-areas: 
+            "navegacion imagenTienda1 imagenTienda2 imagenTienda3 imagenTienda4"
+            "navegacion imagenTienda5 imagenTienda6 imagenTienda7 imagenTienda8"
+            "navegacion imagenTienda9 imagenTienda10 imagenTienda11 imagenTienda12";
+    }
+
+    .navegacion {
+        grid-area: navegacion;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .navegacion li {
+        text-align: center;
+    }
+
+
+    .imagenTienda1 {
+        grid-area: imagenTienda1;
+    }
+
+    .imagenTienda2 {
+        grid-area: imagenTienda2;
+    }
+
+    .imagenTienda3 {
+        grid-area: imagenTienda3;
+    }
+
+    .imagenTienda4 {
+        grid-area: imagenTienda5;
+    }
+
+    .imagenTienda6 {
+        grid-area: imagenTienda6;
+    }
+
+    .imagenTienda7 {
+        grid-area: imagenTienda7;
+    }
+
+    .imagenTienda8 {
+        grid-area: imagenTienda8;
+    }
+
+    .imagenTienda9 {
+        grid-area: imagenTienda9;
+    }
+
+    .imagenTienda10 {
+        grid-area: imagenTienda10;
+    }
+
+    .imagenTienda11 {
+        grid-area: imagenTienda11;
+    }
+
+    .imagenTienda12 {
+        grid-area: imagenTienda12;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+
+    .footer__cajanav, .footer__cajaredes, .footer__cajacontacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
