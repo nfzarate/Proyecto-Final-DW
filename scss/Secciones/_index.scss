@@ -7,7 +7,7 @@
     justify-content: center;
     align-content: center;
     height: 500px;
-    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)) , url("/Images/imagenHero.jpg");
+    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)) , url(/Images/imagenHero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -120,15 +120,15 @@
 }
 
 #contenedorCategorias .cajabebes {
-    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url("/Images/bebe.jpg")
+    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url(/Images/bebe.jpg)
 }
 
 #contenedorCategorias .cajaninios {
-    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url("/Images/ninios.jpg"); 
+    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url(/Images/ninios.jpg); 
 }
 
 #contenedorCategorias .cajaninias {
-    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url("/Images/ninias.jpg");
+    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url(/Images/ninias.jpg);
 }
 
 /*--Sección de Tienda--*/
