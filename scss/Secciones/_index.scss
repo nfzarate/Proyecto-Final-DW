@@ -23,29 +23,29 @@
     align-content: center;
     border-radius: 7px;
     padding: 5px 5px;
-}
 
-.contenedor__box h1 {
+
+    h1 {
     font-family: 'Montserrat', sans-serif;
     color: $blanco;
     font-size: 35px;
-}
+    }
 
-.contenedor__box span {
+    span {
     color: $blanco;
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     background-color: $colorbase;
-}
+    }
 
-.contenedor__box div {
+    div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: $defaultmargin;
-}
+    }
 
-.contenedor__box .boton {
+    .boton {
     border-radius: 10px;
     text-decoration: none;    
     padding: 5px 10px;
@@ -56,11 +56,12 @@
     font-size: 15px;
     transition: all 0.4s linear;
     margin-bottom: 5px;
-}
-
-.contenedor__box .boton:hover {
+    
+        &:hover {
     background-color:rgb(184, 180, 180);
     color: $blanco;
+    }
+    }
 }
 
 /*IMAGENES CATEGORIAS*/
@@ -71,12 +72,22 @@
     align-items: center;
     justify-content: flex-end;
     margin: $defaultmargin;
-}
 
+    .cajabebes {
+        background-image: url(/Images/bebes5.jpg);
+    }
 
-#contenedorCategorias .cajabebes,
-#contenedorCategorias .cajaninios,
-#contenedorCategorias .cajaninias {
+    .cajaninios {
+        background-image: url(/Images/banner-ninios.jpg); 
+    }
+
+    .cajaninias {
+        background-image: url(/Images/ninias-banner.jpg);
+    }
+
+    .cajabebes,
+    .cajaninios,
+    .cajaninias {
     width: ($ancho)-130;
     height: 350px;
     border-radius: 7px;
@@ -87,47 +98,38 @@
     background-repeat: no-repeat;
     margin-bottom: 10px;
     transition: all 0.9s;
-}
 
-#contenedorCategorias .cajabebes:hover,
-#contenedorCategorias .cajaninios:hover,
-#contenedorCategorias .cajaninias:hover {
+    &:hover {
     transform: scale(1.15);
+    }
+    
+
+    a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0.3px;
+
+        &:hover{
+        color: $blanco;
+        }
+    }
+    }
 }
 
-.cajabebes a, .cajaninios a, .cajaninias a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0.3px;
-}
+
 .cajabebes__btnB,.cajaninios__btnOs,.cajaninias__btnAs {
     margin-bottom: 35px;
     padding: 5px 8px;
     font-family: 'Open Sans', sans-serif;
     background-color: $blanco;
     border-radius: 7px;
-    transition: all 0.4s linear    
-}
+    transition: all 0.4s linear;   
 
-.cajabebes__btnB:hover,.cajaninios__btnOs:hover,.cajaninias__btnAs:hover {
+
+    &:hover {
     background-color: rgb(184, 180, 180);
-}
-
-.cajaninias a:hover, .cajaninios a:hover,.cajabebes a:hover  {
-    color: $blanco;
-}
-
-#contenedorCategorias .cajabebes {
-    background-image: url(/Images/bebes5.jpg);
-}
-
-#contenedorCategorias .cajaninios {
-    background-image: url(/Images/banner-ninios.jpg); 
-}
-
-#contenedorCategorias .cajaninias {
-    background-image: url(/Images/ninias-banner.jpg);
+    }
 }
 
 /*--Sección de Tienda--*/
@@ -139,13 +141,14 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-}
 
-.ulCategorias li {
+
+    li {
     padding: 5px;
     background-color:rgb(221, 219, 219);
     border-radius: 5px;
     width: fit-content;
+    }
 }
 
 #grilla {
@@ -162,6 +165,32 @@
         "imagenesTienda11 imagenesTienda12";    
     grid-gap: 10px;
     padding: 10px;
+
+
+    img {
+    width: $fullancho;
+    object-fit: cover;
+    border-radius: 5px;
+    }
+
+    div {
+    text-align: center;
+    }
+
+    a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: $colorbase;
+    
+
+        &:hover {
+        text-decoration: underline;
+        }
+    }
 }
 
 .navegacion {
@@ -205,30 +234,4 @@
 }
 .imagenTienda12 {
     grid-area: imagenTienda12;
-}
-
-
-#grilla img {
-width: $fullancho;
-object-fit: cover;
-border-radius: 5px;
-}
-
-#grilla div {
-    text-align: center;
-}
-
-#grilla a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    color: $colorbase;
-}
-
-#grilla a:hover {
-
-    text-decoration: underline;
 }

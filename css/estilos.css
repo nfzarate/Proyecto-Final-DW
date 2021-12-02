@@ -45,39 +45,34 @@ nav a:hover {
   align-content: center;
   border-radius: 7px;
   padding: 5px 5px; }
-
-.contenedor__box h1 {
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 35px; }
-
-.contenedor__box span {
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  background-color: #ff66c4; }
-
-.contenedor__box div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px; }
-
-.contenedor__box .boton {
-  border-radius: 10px;
-  text-decoration: none;
-  padding: 5px 10px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  transition: all 0.4s linear;
-  margin-bottom: 5px; }
-
-.contenedor__box .boton:hover {
-  background-color: #b8b4b4;
-  color: #ffffff; }
+  .contenedor__box h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 35px; }
+  .contenedor__box span {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    background-color: #ff66c4; }
+  .contenedor__box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; }
+  .contenedor__box .boton {
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    transition: all 0.4s linear;
+    margin-bottom: 5px; }
+    .contenedor__box .boton:hover {
+      background-color: #b8b4b4;
+      color: #ffffff; }
 
 /*IMAGENES CATEGORIAS*/
 #contenedorCategorias {
@@ -86,31 +81,40 @@ nav a:hover {
   align-items: center;
   justify-content: flex-end;
   margin: 10px; }
-
-#contenedorCategorias .cajabebes,
-#contenedorCategorias .cajaninios,
-#contenedorCategorias .cajaninias {
-  width: 320px;
-  height: 350px;
-  border-radius: 7px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  background-repeat: no-repeat;
-  margin-bottom: 10px;
-  transition: all 0.9s; }
-
-#contenedorCategorias .cajabebes:hover,
-#contenedorCategorias .cajaninios:hover,
-#contenedorCategorias .cajaninias:hover {
-  transform: scale(1.15); }
-
-.cajabebes a, .cajaninios a, .cajaninias a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0.3px; }
+  #contenedorCategorias .cajabebes {
+    background-image: url(/Images/bebes5.jpg); }
+  #contenedorCategorias .cajaninios {
+    background-image: url(/Images/banner-ninios.jpg); }
+  #contenedorCategorias .cajaninias {
+    background-image: url(/Images/ninias-banner.jpg); }
+  #contenedorCategorias .cajabebes,
+  #contenedorCategorias .cajaninios,
+  #contenedorCategorias .cajaninias {
+    width: 320px;
+    height: 350px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    transition: all 0.9s; }
+    #contenedorCategorias .cajabebes:hover,
+    #contenedorCategorias .cajaninios:hover,
+    #contenedorCategorias .cajaninias:hover {
+      transform: scale(1.15); }
+    #contenedorCategorias .cajabebes a,
+    #contenedorCategorias .cajaninios a,
+    #contenedorCategorias .cajaninias a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 20px;
+      letter-spacing: 0.3px; }
+      #contenedorCategorias .cajabebes a:hover,
+      #contenedorCategorias .cajaninios a:hover,
+      #contenedorCategorias .cajaninias a:hover {
+        color: #ffffff; }
 
 .cajabebes__btnB, .cajaninios__btnOs, .cajaninias__btnAs {
   margin-bottom: 35px;
@@ -119,21 +123,8 @@ nav a:hover {
   background-color: #ffffff;
   border-radius: 7px;
   transition: all 0.4s linear; }
-
-.cajabebes__btnB:hover, .cajaninios__btnOs:hover, .cajaninias__btnAs:hover {
-  background-color: #b8b4b4; }
-
-.cajaninias a:hover, .cajaninios a:hover, .cajabebes a:hover {
-  color: #ffffff; }
-
-#contenedorCategorias .cajabebes {
-  background-image: url(/Images/bebes5.jpg); }
-
-#contenedorCategorias .cajaninios {
-  background-image: url(/Images/banner-ninios.jpg); }
-
-#contenedorCategorias .cajaninias {
-  background-image: url(/Images/ninias-banner.jpg); }
+  .cajabebes__btnB:hover, .cajaninios__btnOs:hover, .cajaninias__btnAs:hover {
+    background-color: #b8b4b4; }
 
 /*--Sección de Tienda--*/
 .ulCategorias {
@@ -142,12 +133,11 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around; }
-
-.ulCategorias li {
-  padding: 5px;
-  background-color: #dddbdb;
-  border-radius: 5px;
-  width: fit-content; }
+  .ulCategorias li {
+    padding: 5px;
+    background-color: #dddbdb;
+    border-radius: 5px;
+    width: fit-content; }
 
 #grilla {
   display: grid;
@@ -156,6 +146,22 @@ nav a:hover {
   grid-template-areas: "navegacion navegacion" "imagenesTienda1 imagenesTienda2" "imagenesTienda3 imagenesTienda4" "imagenesTienda5 imagenesTienda6" "imagenesTienda7 imagenesTienda8" "imagenesTienda9 imagenesTienda10" "imagenesTienda11 imagenesTienda12";
   grid-gap: 10px;
   padding: 10px; }
+  #grilla img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px; }
+  #grilla div {
+    text-align: center; }
+  #grilla a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #ff66c4; }
+    #grilla a:hover {
+      text-decoration: underline; }
 
 .navegacion {
   grid-area: navegacion;
@@ -197,26 +203,6 @@ nav a:hover {
 
 .imagenTienda12 {
   grid-area: imagenTienda12; }
-
-#grilla img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 5px; }
-
-#grilla div {
-  text-align: center; }
-
-#grilla a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bolder;
-  color: #ff66c4; }
-
-#grilla a:hover {
-  text-decoration: underline; }
 
 .contenedorsecciones {
   font-family: 'Montserrat', sans-serif;
