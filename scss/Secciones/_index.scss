@@ -7,7 +7,7 @@
     justify-content: center;
     align-content: center;
     height: 500px;
-    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)) , url(/Images/imagenHero.jpg);
+    background-image: url(/Images/banner2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -21,7 +21,6 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356));
     border-radius: 7px;
     padding: 5px 5px;
 }
@@ -29,13 +28,13 @@
 .contenedor__box h1 {
     font-family: 'Montserrat', sans-serif;
     color: $blanco;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .contenedor__box span {
     color: $blanco;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     background-color: $colorbase;
 }
 
@@ -111,7 +110,7 @@
     transition: all 0.4s linear    
 }
 
-.cajabebes__btnB:hover,.cajaninios__btnOs:hover,.cajaniniasbtnAs:hover {
+.cajabebes__btnB:hover,.cajaninios__btnOs:hover,.cajaninias__btnAs:hover {
     background-color: rgb(184, 180, 180);
 }
 
@@ -120,15 +119,15 @@
 }
 
 #contenedorCategorias .cajabebes {
-    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url(/Images/bebe.jpg)
+    background-image: url(/Images/bebes5.jpg);
 }
 
 #contenedorCategorias .cajaninios {
-    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url(/Images/ninios.jpg); 
+    background-image: url(/Images/banner-ninios.jpg); 
 }
 
 #contenedorCategorias .cajaninias {
-    background-image: linear-gradient(rgba(173, 166, 166, 0.356),rgba(173, 166, 166, 0.356)), url(/Images/ninias.jpg);
+    background-image: url(/Images/ninias-banner.jpg);
 }
 
 /*--Sección de Tienda--*/

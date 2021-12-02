@@ -30,7 +30,7 @@ nav a:hover {
   justify-content: center;
   align-content: center;
   height: 500px;
-  background-image: linear-gradient(rgba(173, 166, 166, 0.356), rgba(173, 166, 166, 0.356)), url(/Images/imagenHero.jpg);
+  background-image: url(/Images/banner2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -43,19 +43,18 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   align-content: center;
-  background-image: linear-gradient(rgba(173, 166, 166, 0.356), rgba(173, 166, 166, 0.356));
   border-radius: 7px;
   padding: 5px 5px; }
 
 .contenedor__box h1 {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
-  font-size: 25px; }
+  font-size: 35px; }
 
 .contenedor__box span {
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 25px;
   background-color: #ff66c4; }
 
 .contenedor__box div {
@@ -121,20 +120,20 @@ nav a:hover {
   border-radius: 7px;
   transition: all 0.4s linear; }
 
-.cajabebes__btnB:hover, .cajaninios__btnOs:hover, .cajaniniasbtnAs:hover {
+.cajabebes__btnB:hover, .cajaninios__btnOs:hover, .cajaninias__btnAs:hover {
   background-color: #b8b4b4; }
 
 .cajaninias a:hover, .cajaninios a:hover, .cajabebes a:hover {
   color: #ffffff; }
 
 #contenedorCategorias .cajabebes {
-  background-image: linear-gradient(rgba(173, 166, 166, 0.356), rgba(173, 166, 166, 0.356)), url(/Images/bebe.jpg); }
+  background-image: url(/Images/bebes5.jpg); }
 
 #contenedorCategorias .cajaninios {
-  background-image: linear-gradient(rgba(173, 166, 166, 0.356), rgba(173, 166, 166, 0.356)), url(/Images/ninios.jpg); }
+  background-image: url(/Images/banner-ninios.jpg); }
 
 #contenedorCategorias .cajaninias {
-  background-image: linear-gradient(rgba(173, 166, 166, 0.356), rgba(173, 166, 166, 0.356)), url(/Images/ninias.jpg); }
+  background-image: url(/Images/ninias-banner.jpg); }
 
 /*--Sección de Tienda--*/
 .ulCategorias {
@@ -401,9 +400,9 @@ nav a:hover {
   .navbar-collapse {
     flex-grow: 0.5; }
   .contenedor__box h1 {
-    font-size: 40px; }
+    font-size: 50px; }
   .contenedor__box span {
-    font-size: 25px; }
+    font-size: 35px; }
   .contenedor__box .boton {
     font-size: 20px; }
   #contenedorCategorias {
