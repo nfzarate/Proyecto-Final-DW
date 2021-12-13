@@ -1,18 +1,18 @@
 /* Responsive */
 /*Dispositivos medianos*/
+
 @media (min-width: 768px) {
 
     #contenedorCategorias { 
         display:flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: space-between;
     }
 
-    #contenedorCategorias .cajaBebes,
-    #contenedorCategorias .cajaNinios,
-    #contenedorCategorias .cajaNinias {
-        margin-right: 10px;
+    .cajabebes,
+    .cajaninios,
+    .cajaninias {
+        width: 240px;
     }
 
     .ulCategorias li { 

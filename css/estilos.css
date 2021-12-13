@@ -22,6 +22,9 @@ nav a {
 nav a:hover {
   text-decoration: underline; }
 
+.colorBoton {
+  color: #ff66c4 !important; }
+
 /*--Hero--*/
 .contenedor {
   display: flex;
@@ -152,6 +155,13 @@ nav a:hover {
     border-radius: 5px; }
   #grilla div {
     text-align: center; }
+  #grilla p {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #ff66c4; }
   #grilla a {
     text-decoration: none;
     text-transform: uppercase;
@@ -335,12 +345,11 @@ nav a:hover {
   #contenedorCategorias {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-end; }
-  #contenedorCategorias .cajaBebes,
-  #contenedorCategorias .cajaNinios,
-  #contenedorCategorias .cajaNinias {
-    margin-right: 10px; }
+    justify-content: space-between; }
+  .cajabebes,
+  .cajaninios,
+  .cajaninias {
+    width: 240px; }
   .ulCategorias li {
     margin: 5px; }
   #grilla {
